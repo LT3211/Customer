@@ -1,0 +1,335 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : LTMysql
+Source Server Version : 50724
+Source Host           : localhost:3306
+Source Database       : customers
+
+Target Server Type    : MYSQL
+Target Server Version : 50724
+File Encoding         : 65001
+
+Date: 2019-04-10 13:18:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for t_customer
+-- ----------------------------
+DROP TABLE IF EXISTS `t_customer`;
+CREATE TABLE `t_customer` (
+  `cid` char(32) NOT NULL,
+  `cname` varchar(40) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `birthday` char(10) DEFAULT NULL,
+  `cellphone` varchar(15) NOT NULL,
+  `email` varchar(40) DEFAULT NULL,
+  `description` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`cid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_customer
+-- ----------------------------
+INSERT INTO `t_customer` VALUES ('008AFEB096A34C39B1B9DAB96B6B355A', '东方不败_248', '男', '1999-11-11', '139248', 'cstm_248@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('00C31BA694D14367B55FDC8239C6829F', '东方不败_255', '女', '1999-11-11', '139255', 'cstm_255@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('00DCAC7BADAD479AADDFE4BE3C453C4A', '东方不败_189', '女', '1999-11-11', '139189', 'cstm_189@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('021AAD3004BD49AF9746FEF1DE80600A', '东方不败_191', '女', '1999-11-11', '139191', 'cstm_191@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('021BC1B7F1D54A54A32998230ED0EA52', '东方不败_291', '女', '1999-11-11', '139291', 'cstm_291@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0399130585244D1499FE6597AB386259', '东方不败_69', '女', '1999-11-11', '13969', 'cstm_69@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('055992562F9E4363B869FCAC1249BDE9', '东方不败_164', '男', '1999-11-11', '139164', 'cstm_164@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('06BDBF5C568D49F9AE3CCDFBFF2B6F83', '东方不败_57', '女', '1999-11-11', '13957', 'cstm_57@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('06C13635899F405AA826BA94028A827C', '东方不败_62', '男', '1999-11-11', '13962', 'cstm_62@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('095680AEB5A2436EA5DC7F56511A1864', '东方不败_48', '男', '1999-11-11', '13948', 'cstm_48@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('09FD4FEB8CA247E480FBF9BA597C3B24', '东方不败_211', '女', '1999-11-11', '139211', 'cstm_211@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0AA08BB4E14F4020B9D4B11EAE1A4F32', '东方不败_110', '男', '1999-11-11', '139110', 'cstm_110@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0AE002ACB0DF4B7EB6D9C6FAFF1605E3', '东方不败_154', '男', '1999-11-11', '139154', 'cstm_154@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0B4E9D907EFA425793C3FF2F5BD47299', '东方不败_3', '女', '1999-11-11', '1393', 'cstm_3@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0BD2C283666047D0A2D6E7373517C421', '东方不败_85', '女', '1999-11-11', '13985', 'cstm_85@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0D2C5DEF7DC14131A1E27394006CF0B0', '东方不败_51', '女', '1999-11-11', '13951', 'cstm_51@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0D36F705153D43AA94A12BDDCFF42EB6', '东方不败_208', '男', '1999-11-11', '139208', 'cstm_208@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0E2A5B0404AA4E4A99516F734E5A277C', '东方不败_106', '男', '1999-11-11', '139106', 'cstm_106@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0E5387EA99DE42BE9A3DD156E1C27E3E', '东方不败_265', '女', '1999-11-11', '139265', 'cstm_265@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0E773007F52A4A2AA572DEEBB62FEC96', '东方不败_135', '女', '1999-11-11', '139135', 'cstm_135@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0EAB00E95E6F4BECA455F45DEFF95F42', '东方不败_188', '男', '1999-11-11', '139188', 'cstm_188@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0ED5CC32FF4A48E2856378940ED342D3', '东方不败_193', '女', '1999-11-11', '139193', 'cstm_193@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('0ED8A25FFB5B480283F73EDDE2F8660B', '东方不败_179', '女', '1999-11-11', '139179', 'cstm_179@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('121B7FD6E51648CB9D8675A0BE958154', '东方不败_254', '男', '1999-11-11', '139254', 'cstm_254@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('12356F2266524C8484B9CBD912FB4A4E', '东方不败_263', '女', '1999-11-11', '139263', 'cstm_263@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1297B6DFB77A47CC93D0F730C3231CB9', '东方不败_36', '男', '1999-11-11', '13936', 'cstm_36@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('12D957BEE6B141CB870C026A19BBF4B7', '东方不败_55', '女', '1999-11-11', '13955', 'cstm_55@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('132D899213C845DA8C2ED0E32DBDE639', '东方不败_273', '女', '1999-11-11', '139273', 'cstm_273@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('136EFB7FDE3B48EDA15257ACF643F2FB', '东方不败_258', '男', '1999-11-11', '139258', 'cstm_258@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('13D45742FF7B4BC18F36F8E02CA1AA34', '东方不败_101', '女', '1999-11-11', '139101', 'cstm_101@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('148BBC72824647389F80833FC3F09D00', '东方不败_166', '男', '1999-11-11', '139166', 'cstm_166@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('153F8CB8FC974C61A0B3CEEEB13CE307', '东方不败_43', '女', '1999-11-11', '13943', 'cstm_43@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('15D7C263EB1D4BF9BDC9F26282D798A7', '东方不败_41', '女', '1999-11-11', '13941', 'cstm_41@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('16696FEEAE5B4C498EADF1EF8686C5B8', '东方不败_10', '男', '1999-11-11', '13910', 'cstm_10@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('170F919D42BE4ADB91999BCFAE2E6033', '东方不败_100', '男', '1999-11-11', '139100', 'cstm_100@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('17CE5FED204D41EFB283DCDC8B9787E9', '东方不败_256', '男', '1999-11-11', '139256', 'cstm_256@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1803E724047242B7A59C95F78CD50786', '东方不败_44', '男', '1999-11-11', '13944', 'cstm_44@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1873A16D4F70452C830BB449CBD94A0C', '东方不败_19', '女', '1999-11-11', '13919', 'cstm_19@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('188D849F4044478D9D4215780F88D48C', '东方不败_129', '女', '1999-11-11', '139129', 'cstm_129@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('18A7FFE6098B47DEBEBD658934A76C47', '东方不败_223', '女', '1999-11-11', '139223', 'cstm_223@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1A7C25DAD1A94E57B06772266F252B07', '东方不败_66', '男', '1999-11-11', '13966', 'cstm_66@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1BC248C6357B48E7B26BB850B37581C9', '东方不败_284', '男', '1999-11-11', '139284', 'cstm_284@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1C124E8B0B1146CAA55BC7BD2DC722DA', '东方不败_117', '女', '1999-11-11', '139117', 'cstm_117@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1C83515284F24B3598A2B028A856B338', '东方不败_22', '男', '1999-11-11', '13922', 'cstm_22@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1D5F0EDCB4F54FC7A5E839E217ECD86C', '东方不败_126', '男', '1999-11-11', '139126', 'cstm_126@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('1DA33DD45B7E485FA94347E112EBE999', '东方不败_17', '女', '1999-11-11', '13917', 'cstm_17@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('20E2EFD5BA354E1CB8820065E1261902', '东方不败_267', '女', '1999-11-11', '139267', 'cstm_267@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('22E80F6904DA45149A2CA82E8950584B', '东方不败_170', '男', '1999-11-11', '139170', 'cstm_170@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('24861A6EDDBD4A2988CDE23224687848', '东方不败_226', '男', '1999-11-11', '139226', 'cstm_226@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2492CF88E09F4BED8972B2FE153A0756', '东方不败_155', '女', '1999-11-11', '139155', 'cstm_155@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2638A2FD2C0B47259EBE789396299074', '东方不败_238', '男', '1999-11-11', '139238', 'cstm_238@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('26991F3BA8C34A2FA201447D8EDE8BD8', '东方不败_173', '女', '1999-11-11', '139173', 'cstm_173@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2710A83007C24D1C8FE9ACAAAFC6BF4C', '东方不败_13', '女', '1999-11-11', '13913', 'cstm_13@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('28BD12F8DD3A45979C84ECE3B9050353', '东方不败_292', '男', '1999-11-11', '139292', 'cstm_292@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('29DC3247D7824471B49169A987032F68', '东方不败_7', '女', '1999-11-11', '1397', 'cstm_7@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('29E9A5FC15B94A9294600F9073EFAA11', '东方不败_86', '男', '1999-11-11', '13986', 'cstm_86@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2A305B9B4BFD4B988B1BF1AFBE02EBC3', '东方不败_286', '男', '1999-11-11', '139286', 'cstm_286@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2B5FCD7BC23948FB98CD5A6AC2232D3D', '东方不败_75', '女', '1999-11-11', '13975', 'cstm_75@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2E3665F75477449FB7F5E72AE35437D0', '东方不败_99', '女', '1999-11-11', '13999', 'cstm_99@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2E7E002DEC9D419CAB2AAF6826877599', '东方不败_77', '女', '1999-11-11', '13977', 'cstm_77@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2EABBDDF1AF842C4B9953244C30DB74C', '东方不败_14', '男', '1999-11-11', '13914', 'cstm_14@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2F2D1D03B0804A8597231D02522C217F', '东方不败_53', '女', '1999-11-11', '13953', 'cstm_53@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('2FA28BF866A54CB196364356A8D77FAA', '东方不败_186', '男', '1999-11-11', '139186', 'cstm_186@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('33B31BE59C3840DAB5C3B010260F55BB', '东方不败_79', '女', '1999-11-11', '13979', 'cstm_79@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3424BEA47CC04D63B356FDE01F61814D', '东方不败_216', '男', '1999-11-11', '139216', 'cstm_216@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('343E695D0E874D8CB85A3F066E80555D', '东方不败_210', '男', '1999-11-11', '139210', 'cstm_210@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('351C737F248D4B9DB6D0096709CFD6B5', '东方不败_229', '女', '1999-11-11', '139229', 'cstm_229@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3708F5A966414D098410C24429961BD8', '东方不败_176', '男', '1999-11-11', '139176', 'cstm_176@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3873FF66175442BB947F42E7EF35DB32', '东方不败_28', '男', '1999-11-11', '13928', 'cstm_28@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3A7154934B5A47CDAED3B7C4F8F1F01C', '东方不败_143', '女', '1999-11-11', '139143', 'cstm_143@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3AA3A49DFBF646C7A7B2A694B9A802A8', '东方不败_82', '男', '1999-11-11', '13982', 'cstm_82@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3AD97FCE44C74ACD85633D9BBB8EC2A7', '东方不败_247', '女', '1999-11-11', '139247', 'cstm_247@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3C46C72A8F084BB382B3C1E0C9C45938', '东方不败_125', '女', '1999-11-11', '139125', 'cstm_125@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3E57A9B2B33C4E05950D58F73A5A1C5E', '东方不败_46', '男', '1999-11-11', '13946', 'cstm_46@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('3F0305E90C2E44269C7CAAAF30356C62', '东方不败_264', '男', '1999-11-11', '139264', 'cstm_264@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('406286A7058D4014822353A106DC6D39', '东方不败_141', '女', '1999-11-11', '139141', 'cstm_141@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('41BE2BD0B3E840C39BFE61B627BDE370', '东方不败_138', '男', '1999-11-11', '139138', 'cstm_138@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('43F006AA607F4F2DB9B070F4F9E999DD', '东方不败_102', '男', '1999-11-11', '139102', 'cstm_102@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('43F2FC13D4E0487F9877476347D980FD', '东方不败_119', '女', '1999-11-11', '139119', 'cstm_119@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('44654ED86E4D4C3B9748F6F173F6AC1B', '东方不败_16', '男', '1999-11-11', '13916', 'cstm_16@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('446FAD734DEC4A0DAA4EFFB109C8C21D', '东方不败_252', '男', '1999-11-11', '139252', 'cstm_252@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('460BAE5272F14673B87F3A36585D2FB6', '东方不败_128', '男', '1999-11-11', '139128', 'cstm_128@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('470168F41C304E7FAC821AE574579944', '东方不败_92', '男', '1999-11-11', '13992', 'cstm_92@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4839119EA9834EB2B56497BC4EE11458', '东方不败_40', '男', '1999-11-11', '13940', 'cstm_40@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('48751939DEBC46209F8337A09BD00569', '东方不败_160', '男', '1999-11-11', '139160', 'cstm_160@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('49266D4165824E34A0CDF389DE8A0929', '东方不败_31', '女', '1999-11-11', '13931', 'cstm_31@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4A4FE6A7FC904254B2ECAFFE77CF2332', '东方不败_56', '男', '1999-11-11', '13956', 'cstm_56@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4B65523669AB4324B5378B739EA61CD0', '东方不败_299', '女', '1999-11-11', '139299', 'cstm_299@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4D225ACCCD094182929A8519CCD9E194', '东方不败_177', '女', '1999-11-11', '139177', 'cstm_177@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4DF07D36C98E434384E1C449B1B8A95B', '东方不败_71', '女', '1999-11-11', '13971', 'cstm_71@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4E1897F95D5B4159A2C176A7C64EA80C', '东方不败_279', '女', '1999-11-11', '139279', 'cstm_279@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4E7BCB442BFC413FA817A272FAB78CAF', '东方不败_49', '女', '1999-11-11', '13949', 'cstm_49@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4EF52D0905C24B23AF9EBEEA99EA5AE8', '东方不败_277', '女', '1999-11-11', '139277', 'cstm_277@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4F4544FFEA5B4BD2B06C38B0B44B3E74', '东方不败_242', '男', '1999-11-11', '139242', 'cstm_242@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('4FEF0388E1A44E9BAFB1D7936B57FCF4', '东方不败_58', '男', '1999-11-11', '13958', 'cstm_58@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('500EF65091D941D0AEFC9E0A49054AFA', '东方不败_243', '女', '1999-11-11', '139243', 'cstm_243@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('509DECF19E9D48558513AC8CD0250C2D', '东方不败_298', '男', '1999-11-11', '139298', 'cstm_298@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('531BD328BBCF45B5AF631B2C6F11318A', '东方不败_108', '男', '1999-11-11', '139108', 'cstm_108@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('539F797CA84A466981204D3D22797AD3', '东方不败_201', '女', '1999-11-11', '139201', 'cstm_201@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('540283A3CAA74E9785C1218878F305F9', '东方不败_276', '男', '1999-11-11', '139276', 'cstm_276@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('546B6549A36B47DDAF4D0FB82D3786BE', '东方不败_204', '男', '1999-11-11', '139204', 'cstm_204@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('54E55288122742A4BC014484B242B68B', '东方不败_18', '男', '1999-11-11', '13918', 'cstm_18@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('559F4D1C47F5411197F9E52BFC2C915E', '东方不败_47', '女', '1999-11-11', '13947', 'cstm_47@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('57A71D9282434EE981038F3B56B4296B', '东方不败_206', '男', '1999-11-11', '139206', 'cstm_206@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('591F1A30EC5443FA9D21B50A79F909CA', '东方不败_74', '男', '1999-11-11', '13974', 'cstm_74@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('593DF5F0B3BE4EC280FA8166C011CEC4', '东方不败_224', '男', '1999-11-11', '139224', 'cstm_224@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('59503DA03A5F4E24A0FBEF98C9A64089', '东方不败_212', '男', '1999-11-11', '139212', 'cstm_212@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5962579D9F324DAEA45F9D17119C98A3', '东方不败_127', '女', '1999-11-11', '139127', 'cstm_127@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5A120C3ED84A44E4A7C2213C7E5DC370', '东方不败_233', '女', '1999-11-11', '139233', 'cstm_233@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5B0301EB9A3A46CB83AB9FB68C1B7DB8', '东方不败_144', '男', '1999-11-11', '139144', 'cstm_144@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5BA373DB89354692B3C06A6E028C7946', '东方不败_225', '女', '1999-11-11', '139225', 'cstm_225@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5C2E7916B854414EAA8EDDBD240A1F7A', '东方不败_275', '女', '1999-11-11', '139275', 'cstm_275@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5C80970D911A4C3EB587FD98BDD8DC7B', '东方不败_120', '男', '1999-11-11', '139120', 'cstm_120@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('5EE0DEB57D53423F916FE7AB8D9543AB', '东方不败_91', '女', '1999-11-11', '13991', 'cstm_91@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6276891A3D954664AAA41D7570B9F990', '东方不败_87', '女', '1999-11-11', '13987', 'cstm_87@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('62DC373CA3354BF6B6AF691B0CD1DB0F', '东方不败_295', '女', '1999-11-11', '139295', 'cstm_295@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('63288E524705477D8126C6BBBB9ABCB5', '东方不败_185', '女', '1999-11-11', '139185', 'cstm_185@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('64D05E530756492CA82F116951148D3A', '东方不败_72', '男', '1999-11-11', '13972', 'cstm_72@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6630C2F5B2944139A6691EB87A265DD7', '东方不败_182', '男', '1999-11-11', '139182', 'cstm_182@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('67156E82EB314AA692B8C72747FDC51E', '东方不败_235', '女', '1999-11-11', '139235', 'cstm_235@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('684334AE734A4EFE9F050FC0CB8C8145', '东方不败_59', '女', '1999-11-11', '13959', 'cstm_59@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6900323FB4C646BD99B950996616B0F3', '东方不败_21', '女', '1999-11-11', '13921', 'cstm_21@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6935F8B1FDBC4CF0A28B1FD042ED3020', '东方不败_78', '男', '1999-11-11', '13978', 'cstm_78@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('69C5CDA25AB9438187211F4AB2112146', '东方不败_217', '女', '1999-11-11', '139217', 'cstm_217@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6C4288E14AF6424E8564FF49314F848F', '东方不败_60', '男', '1999-11-11', '13960', 'cstm_60@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6D66929BE4AA43418659DF27789CF62C', '东方不败_107', '女', '1999-11-11', '139107', 'cstm_107@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6DA77573FA344EB58FEF2D326B8A1692', '东方不败_246', '男', '1999-11-11', '139246', 'cstm_246@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6E44A385A85B4391BD7F600E6F88655B', '东方不败_93', '女', '1999-11-11', '13993', 'cstm_93@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('6EA1167FAACD471AA749AA8C5A955EB3', '东方不败_270', '男', '1999-11-11', '139270', 'cstm_270@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('702DF15D25EF4474AE8C9A5A7302ABD1', '东方不败_280', '男', '1999-11-11', '139280', 'cstm_280@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('70C6093994D34B31B115FC76B6A953EA', '东方不败_290', '男', '1999-11-11', '139290', 'cstm_290@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('74557A45364D473D8F95DFEBBD900E37', '东方不败_114', '男', '1999-11-11', '139114', 'cstm_114@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('7600C3A9E06F4CB4A19F65E29A0413A2', '东方不败_8', '男', '1999-11-11', '1398', 'cstm_8@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('76CDFF4EA71D48C28E110CE7D25A0FB8', '东方不败_158', '男', '1999-11-11', '139158', 'cstm_158@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('776680BABD3749DE9F9318DD55554E53', '东方不败_151', '女', '1999-11-11', '139151', 'cstm_151@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('77B4D5628DEF40FDBFAAE0D298685537', '东方不败_33', '女', '1999-11-11', '13933', 'cstm_33@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('782E680AA55145DEA0FB0CA0E544B888', '东方不败_50', '男', '1999-11-11', '13950', 'cstm_50@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('797034DC111947869C88B35BF30511F6', '东方不败_207', '女', '1999-11-11', '139207', 'cstm_207@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('79DFA318F5084E4FB11B51A5F8734528', '东方不败_105', '女', '1999-11-11', '139105', 'cstm_105@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('7F49FDF70401478E8AAD2C4627A55CA4', '东方不败_140', '男', '1999-11-11', '139140', 'cstm_140@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('7FF74D7499224F93960610B09ADBB4F8', '东方不败_89', '女', '1999-11-11', '13989', 'cstm_89@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('80A095E838FE41BF94823600670FF295', '东方不败_249', '女', '1999-11-11', '139249', 'cstm_249@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('817DC71C64CF4BF9A0086862B72E4292', '东方不败_104', '男', '1999-11-11', '139104', 'cstm_104@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('81C7CADC4C3945EF90FB8280C2E755C9', '东方不败_88', '男', '1999-11-11', '13988', 'cstm_88@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('82CBF10F3FD14B2C9D0E595208A3DFB3', '东方不败_130', '男', '1999-11-11', '139130', 'cstm_130@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('85901F1D7A574610B17A8979EAD991E2', '东方不败_24', '男', '1999-11-11', '13924', 'cstm_24@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('86EDF986D2494A16BF1CD1F8D18D2A69', '东方不败_113', '女', '1999-11-11', '139113', 'cstm_113@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('877EE7B73A35473497B71DFAFACAF073', '东方不败_297', '女', '1999-11-11', '139297', 'cstm_297@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('880A46BF8552427F997EC8DB7D7CFE09', '东方不败_168', '男', '1999-11-11', '139168', 'cstm_168@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('891069269460458AACBEC68AF0626545', '东方不败_81', '女', '1999-11-11', '13981', 'cstm_81@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('89E1F0E616B24DABA0B9ADB8BCC2B6EC', '东方不败_240', '男', '1999-11-11', '139240', 'cstm_240@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8A15E090E525402CBB9529CEDD1BF847', '东方不败_283', '女', '1999-11-11', '139283', 'cstm_283@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8A2A99A7AA4C4435A0F7B3C1F527D434', '东方不败_250', '男', '1999-11-11', '139250', 'cstm_250@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8A6C831629874EA6B04AE6CC7B887518', '东方不败_213', '女', '1999-11-11', '139213', 'cstm_213@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8B176E8D3A41415D8C66808C85096477', '东方不败_39', '女', '1999-11-11', '13939', 'cstm_39@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8C403A427C024EB79DE21D862198C418', '东方不败_137', '女', '1999-11-11', '139137', 'cstm_137@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8DB49604DCE34E939C904ABBEC9F5EB6', '东方不败_156', '男', '1999-11-11', '139156', 'cstm_156@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8DD64356C9BF4CDB96A425024B732972', '东方不败_4', '男', '1999-11-11', '1394', 'cstm_4@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8EDB7CDD2F1B48E98F0D7E665C517297', '东方不败_244', '男', '1999-11-11', '139244', 'cstm_244@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8F2564A495264CD8A0A58788779CE691', '东方不败_133', '女', '1999-11-11', '139133', 'cstm_133@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('8F54113785D447749543FC3948ACED96', '东方不败_103', '女', '1999-11-11', '139103', 'cstm_103@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('91EAB8A3E24C46D6AF0CA248E94AA0E5', '东方不败_285', '女', '1999-11-11', '139285', 'cstm_285@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('92B80D3CEE0143E5A11C919A800743E8', '东方不败_134', '男', '1999-11-11', '139134', 'cstm_134@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('952967AA35F045F8A789E56BDB49C442', '东方不败_52', '男', '1999-11-11', '13952', 'cstm_52@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('95E95F1D528944D9B80CA78A23D75D33', '东方不败_83', '女', '1999-11-11', '13983', 'cstm_83@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9769654B5948408DB155EC982EF3C4BA', '东方不败_63', '女', '1999-11-11', '13963', 'cstm_63@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('987AEC2DDE2E48779EB53D4DE66622BE', '东方不败_281', '女', '1999-11-11', '139281', 'cstm_281@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9ADE78BACF774D26A9277CDBA525CF0C', '东方不败_231', '女', '1999-11-11', '139231', 'cstm_231@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9C881F07819E4C4F863501BE5FB84CD1', '东方不败_38', '男', '1999-11-11', '13938', 'cstm_38@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9C9405ED5910425DBC9FC80AE803F37B', '东方不败_288', '男', '1999-11-11', '139288', 'cstm_288@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9D19DD011A974AAB98958E5FDB47AF27', '东方不败_266', '男', '1999-11-11', '139266', 'cstm_266@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9E6F528243F74C59B6D9867D5AE49C2F', '东方不败_194', '男', '1999-11-11', '139194', 'cstm_194@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('9F4A43400F84477FBE1BF69D1C36C28A', '东方不败_109', '女', '1999-11-11', '139109', 'cstm_109@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A28F32C51BB04595B6ED3DEFF092D20A', '东方不败_61', '女', '1999-11-11', '13961', 'cstm_61@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A2D9AE5F794640AD9072B7FAA87F6A09', '东方不败_90', '男', '1999-11-11', '13990', 'cstm_90@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A30A730BB8EB4325B2147156C7BB495E', '东方不败_27', '女', '1999-11-11', '13927', 'cstm_27@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A446ACA6BA004B5992740E4FD237FE62', '东方不败_293', '女', '1999-11-11', '139293', 'cstm_293@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A65C6F5FA39A4B3F87CC26B945C55CAF', '东方不败_139', '女', '1999-11-11', '139139', 'cstm_139@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A6F58ED090224D9EB976AFE44017195C', '东方不败_64', '男', '1999-11-11', '13964', 'cstm_64@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A7D884AFD69044F0A2F16794C3219BCC', '东方不败_142', '男', '1999-11-11', '139142', 'cstm_142@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A8482F65EF5C4B6CB368A2C0FE1255F6', '东方不败_115', '女', '1999-11-11', '139115', 'cstm_115@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A87DFFDFAA914DCD8D7EFBFCC1EE5C7E', '东方不败_37', '女', '1999-11-11', '13937', 'cstm_37@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('A8FA8E5939C24EDAA0D1CFD545655F64', '东方不败_123', '女', '1999-11-11', '139123', 'cstm_123@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AA54311188B543699AB7C60D6FC8B580', '东方不败_257', '女', '1999-11-11', '139257', 'cstm_257@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AA732E3E060445F5B21EE5097DBF37B5', '东方不败_94', '男', '1999-11-11', '13994', 'cstm_94@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AAE1EF1EFAE84887806724F5EADF1E16', '东方不败_197', '女', '1999-11-11', '139197', 'cstm_197@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AB29C562BE57432799BA37B8B9E50DC8', '东方不败_268', '男', '1999-11-11', '139268', 'cstm_268@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('ACCBDD25A80647189CB532AE473BB396', '东方不败_30', '男', '1999-11-11', '13930', 'cstm_30@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AD4F24DAD7804912BE308DF0B0DD3D9E', '东方不败_98', '男', '1999-11-11', '13998', 'cstm_98@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AE27B4A622874845A6577C20B5C8A9A1', '东方不败_227', '女', '1999-11-11', '139227', 'cstm_227@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AE81B1196CD443FF867035BB5A504346', '东方不败_73', '女', '1999-11-11', '13973', 'cstm_73@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AEF035380DE94870846B3C38FC014DB3', '东方不败_200', '男', '1999-11-11', '139200', 'cstm_200@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AF01562A25E046A1A794111143C13397', '东方不败_274', '男', '1999-11-11', '139274', 'cstm_274@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AF6DE754C16449AFB4C35CE8A958D9D4', '东方不败_196', '男', '1999-11-11', '139196', 'cstm_196@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('AFFCA96743624170A0AB4830E02F070B', '东方不败_239', '女', '1999-11-11', '139239', 'cstm_239@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B00F19C9DEF542BCAC19BBA4F54FA295', '东方不败_230', '男', '1999-11-11', '139230', 'cstm_230@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B1C25E51D3284DA1B65A2A86E2A75D76', '东方不败_15', '女', '1999-11-11', '13915', 'cstm_15@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B2A1E68F8C15455E9FAD71CFAFD72948', '东方不败_45', '女', '1999-11-11', '13945', 'cstm_45@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B40590EE2BD946189654D0A82801EC87', '东方不败_272', '男', '1999-11-11', '139272', 'cstm_272@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B5EEAF65EAC343248678F64C944F68DC', '东方不败_70', '男', '1999-11-11', '13970', 'cstm_70@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B8071A118E804DBCAFABC3F32F96FFE0', '东方不败_236', '男', '1999-11-11', '139236', 'cstm_236@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B8CED46690804E38992A98E9BB9A8323', '东方不败_68', '男', '1999-11-11', '13968', 'cstm_68@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B943579609EA41429CF3A5D9D715C62D', '东方不败_145', '女', '1999-11-11', '139145', 'cstm_145@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B959D8222A7A48CF8F41518F09F1C43F', '东方不败_183', '女', '1999-11-11', '139183', 'cstm_183@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('B9F10D58DEF94A8680585A0E78A9961C', '东方不败_26', '男', '1999-11-11', '13926', 'cstm_26@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('BC3EFC039FF84C8D90B7DE75C1474E9E', '东方不败_118', '男', '1999-11-11', '139118', 'cstm_118@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('BF618ED720644CEC8CC4115EB4643130', '东方不败_271', '女', '1999-11-11', '139271', 'cstm_271@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('BFF00B74DFF94D6B866E2C85CF741568', '东方不败_167', '女', '1999-11-11', '139167', 'cstm_167@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C09910D49ADE4D35A2FD0A88F570F1FB', '东方不败_260', '男', '1999-11-11', '139260', 'cstm_260@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C0AFC7656EF240958BB872441B7E6C6E', '东方不败_147', '女', '1999-11-11', '139147', 'cstm_147@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C18DB2CC2808410DA3450352ABE54F16', '东方不败_29', '女', '1999-11-11', '13929', 'cstm_29@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C22D83967BA44771B3EFB9E0FBB7BD2B', '东方不败_278', '男', '1999-11-11', '139278', 'cstm_278@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C25549935A5F4AE69998B7FA99F65593', '东方不败_187', '女', '1999-11-11', '139187', 'cstm_187@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C262DAA1FA8D47BDABAE276932552D39', '东方不败_111', '女', '1999-11-11', '139111', 'cstm_111@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C3509E9B49D24D76AE23C8F4DEF6CCCB', '东方不败_221', '女', '1999-11-11', '139221', 'cstm_221@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C408660A2D37407387B9CDA4F5ABE021', '东方不败_203', '女', '1999-11-11', '139203', 'cstm_203@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C60395E1EF784350826444A4FCE9540E', '东方不败_192', '男', '1999-11-11', '139192', 'cstm_192@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C65F32A100374399BFE1F3D455DC38FD', '东方不败_153', '女', '1999-11-11', '139153', 'cstm_153@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C6C09E65834B4D35AFD4DDD3CF61AD0C', '东方不败_262', '男', '1999-11-11', '139262', 'cstm_262@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C76765DCD8B7492F87FA16F463F30B41', '东方不败_136', '男', '1999-11-11', '139136', 'cstm_136@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C83D089766E940A3A9DA741839882936', '东方不败_42', '男', '1999-11-11', '13942', 'cstm_42@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C901E8C8D122451B8D441D642867A984', '东方不败_287', '女', '1999-11-11', '139287', 'cstm_287@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C9264D994A444CA1A55426B7EF7CA756', '东方不败_205', '女', '1999-11-11', '139205', 'cstm_205@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C93E53E5537D4558B505868292507A71', '东方不败_5', '女', '1999-11-11', '1395', 'cstm_5@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('C9FF98FFA4A4457F888A31C56D7F64EF', '东方不败_32', '男', '1999-11-11', '13932', 'cstm_32@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('CA35826CA4C84991B9EBBE39BDC0F17B', '东方不败_132', '男', '1999-11-11', '139132', 'cstm_132@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('CB2DC77251854DD78BA3194BBA781A85', '东方不败_220', '男', '1999-11-11', '139220', 'cstm_220@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('CEE76D83B84040CEAB1CA2CF4D7C99A1', '东方不败_2', '男', '1999-11-11', '1392', 'cstm_2@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('CEF9AA6B7A7C4089BD9C5B105B7E4378', '东方不败_169', '女', '1999-11-11', '139169', 'cstm_169@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D01805FB760746358444361A3F66CBA6', '东方不败_131', '女', '1999-11-11', '139131', 'cstm_131@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D0B9F1CD607843EA98BE9E954F212879', '东方不败_219', '女', '1999-11-11', '139219', 'cstm_219@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D14EB299AACB41DF86CE5A3B472DEA43', '东方不败_11', '女', '1999-11-11', '13911', 'cstm_11@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D1779039D456403DAF84A0D00A1D8D8F', '东方不败_9', '女', '1999-11-11', '1399', 'cstm_9@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D190A50966874D9E9143509AC2B0B2FD', '东方不败_259', '女', '1999-11-11', '139259', 'cstm_259@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D1D459BBCAC341FAA839557DD4B46EEF', '东方不败_181', '女', '1999-11-11', '139181', 'cstm_181@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D8532BF260794DAD9C4CBA1EE5C780A0', '东方不败_159', '女', '1999-11-11', '139159', 'cstm_159@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D8B3C1739C39434B86EAED8D81438400', '东方不败_23', '女', '1999-11-11', '13923', 'cstm_23@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D8E72B4D8A774E8797D75D1A58405D49', '东方不败_198', '男', '1999-11-11', '139198', 'cstm_198@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D984EFC365B3470EA46CD784C6048B67', '东方不败_289', '女', '1999-11-11', '139289', 'cstm_289@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D9945E57E1F84C9083CB37AFEE9D2A73', '东方不败_95', '女', '1999-11-11', '13995', 'cstm_95@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('D9F431255C7749F1ACA49564FA4F0132', '东方不败_149', '女', '1999-11-11', '139149', 'cstm_149@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DB05300A5C684AFCB2AD2B0DDA477A28', '东方不败_54', '男', '1999-11-11', '13954', 'cstm_54@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DB0BC37A4ED849328DDCB61FC11EC6D8', '东方不败_35', '女', '1999-11-11', '13935', 'cstm_35@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DB16D92FA18444C39B0AE142339DD85D', '东方不败_251', '女', '1999-11-11', '139251', 'cstm_251@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DB3D921753104208BE139446C278C8C3', '东方不败_190', '男', '1999-11-11', '139190', 'cstm_190@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DBBA64B6923B4B7A88B6754D90897ACE', '东方不败_237', '女', '1999-11-11', '139237', 'cstm_237@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DC87C1B818AA41D3808EAF80795E47E2', '东方不败_294', '男', '1999-11-11', '139294', 'cstm_294@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DD19D0BCF48741DAB867F7F34382E952', '东方不败_6', '男', '1999-11-11', '1396', 'cstm_6@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DD94FC9200DC41F9B72A5E5A90D387BC', '东方不败_1', '女', '1999-11-11', '1391', 'cstm_1@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('DE7F9F8CFE824B4692042C30C5442A29', '东方不败_241', '女', '1999-11-11', '139241', 'cstm_241@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E07CF92A5F7A4B14BCD2D12610A223DF', '东方不败_234', '男', '1999-11-11', '139234', 'cstm_234@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E2AB318238E84FEDB8464F3C719DD4ED', '东方不败_172', '男', '1999-11-11', '139172', 'cstm_172@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E3748D5963144C6C9D6127507D7CC70C', '东方不败_124', '男', '1999-11-11', '139124', 'cstm_124@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E37AC5C7624B4D48A75EA275F33FDE35', '东方不败_116', '男', '1999-11-11', '139116', 'cstm_116@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E5FAC15758314096AB116EAD6912FBC8', '东方不败_178', '男', '1999-11-11', '139178', 'cstm_178@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E6578B761F964B54B1DD1D343B27FA6A', '东方不败_245', '女', '1999-11-11', '139245', 'cstm_245@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E6D8648967E94A3198404345F298F920', '东方不败_215', '女', '1999-11-11', '139215', 'cstm_215@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E784F226B9024A6B8BD162088596C6B3', '东方不败_65', '女', '1999-11-11', '13965', 'cstm_65@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E92870AF4024482E97726AB3105B3A63', '东方不败_282', '男', '1999-11-11', '139282', 'cstm_282@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('E97AA43069AC43FFA5A8D368764DD33E', '东方不败_195', '女', '1999-11-11', '139195', 'cstm_195@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EB50766C2DC2486180944D4EE7DAC576', '东方不败_96', '男', '1999-11-11', '13996', 'cstm_96@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EC23B309BB3A454CAE86CEA8C0D08540', '东方不败_199', '女', '1999-11-11', '139199', 'cstm_199@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EDE7CD6738474DAC8D8BA08E781E4996', '东方不败_157', '女', '1999-11-11', '139157', 'cstm_157@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EDEFD72BEEA544F98C5504E72A87B439', '东方不败_184', '男', '1999-11-11', '139184', 'cstm_184@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EDF2F329AA4D4B42861A3A7418ACBBDF', '东方不败_152', '男', '1999-11-11', '139152', 'cstm_152@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EE616018427F4FAE850FF0B887DC65D3', '东方不败_180', '男', '1999-11-11', '139180', 'cstm_180@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EED882A5F23F49FE9FFACCD27C763C10', '东方不败_228', '男', '1999-11-11', '139228', 'cstm_228@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EEF9A5B51EAD4DE48AF7CF451D0C9734', '东方不败_112', '男', '1999-11-11', '139112', 'cstm_112@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EF6D7E0C9B194576B065AB733524CE84', '东方不败_171', '女', '1999-11-11', '139171', 'cstm_171@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('EFA116251C6E4A1DA45849CED4088A11', '东方不败_165', '女', '1999-11-11', '139165', 'cstm_165@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F0172C11AD8940C092E1A2D83F023F4D', '东方不败_34', '男', '1999-11-11', '13934', 'cstm_34@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F194AF8F7D264EFA8F18790A18AAA611', '东方不败_162', '男', '1999-11-11', '139162', 'cstm_162@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F20B5A52356A416B8D449E45CB83712B', '东方不败_122', '男', '1999-11-11', '139122', 'cstm_122@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F2EB9DDD81BB404A902B31C5F1DA0159', '东方不败_84', '男', '1999-11-11', '13984', 'cstm_84@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F3CFB4C4DEF347B19320A43222246E9B', '东方不败_175', '女', '1999-11-11', '139175', 'cstm_175@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F45233A7EC3D4E54A3B9EE203E1F2CCB', '东方不败_232', '男', '1999-11-11', '139232', 'cstm_232@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F52EBA7F1A84417B94582FDC5AD48111', '东方不败_76', '男', '1999-11-11', '13976', 'cstm_76@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F65E0B3471FD4A29897EDC9354AACEF9', '东方不败_148', '男', '1999-11-11', '139148', 'cstm_148@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F6B809C6B97740BEA7EF66BAB5C8EE3A', '东方不败_97', '女', '1999-11-11', '13997', 'cstm_97@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F6F57DA4E7D1473AA159090492E7E9AB', '东方不败_121', '女', '1999-11-11', '139121', 'cstm_121@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F6F843692D0A4C25BA42E87F3AEA7556', '东方不败_269', '女', '1999-11-11', '139269', 'cstm_269@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F887379497514E75952AC2E79629ADA8', '东方不败_222', '男', '1999-11-11', '139222', 'cstm_222@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F8AB00BE0DC443448CBD905AA8BA7808', '东方不败_163', '女', '1999-11-11', '139163', 'cstm_163@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F8D1A5F7350C43E5B9F9F9A09C224EEE', '东方不败_261', '女', '1999-11-11', '139261', 'cstm_261@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F8D31094E2694574A12A38036FCCA59C', '东方不败_20', '男', '1999-11-11', '13920', 'cstm_20@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F8F0206CCE0B44F6957046E2B62C21B7', '东方不败_12', '男', '1999-11-11', '13912', 'cstm_12@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F8F438DA1C2E41AA83C2458F4F6A8F13', '东方不败_161', '女', '1999-11-11', '139161', 'cstm_161@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F915268A228742AFA151A57ECFB637B7', '东方不败_150', '男', '1999-11-11', '139150', 'cstm_150@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F92FB323BFA741E0A03908AA82CB4C4C', '东方不败_253', '女', '1999-11-11', '139253', 'cstm_253@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('F9FD15C987014B288BCD8DA2D5018FF8', '东方不败_174', '男', '1999-11-11', '139174', 'cstm_174@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FA96A9BFD1544FF09EC36E746F5A9A29', '东方不败_214', '男', '1999-11-11', '139214', 'cstm_214@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FBD434C08D9A4206B293CF5327248E4B', '东方不败_67', '女', '1999-11-11', '13967', 'cstm_67@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FBF2F7EB9C2F4512B0E09E2746D920E9', '东方不败_300', '男', '1999-11-11', '139300', 'cstm_300@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FC21890E3CA2432DA9F8D9776F727E30', '东方不败_202', '男', '1999-11-11', '139202', 'cstm_202@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FC4B6126DB704C918180C84EAF745555', '东方不败_209', '女', '1999-11-11', '139209', 'cstm_209@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FC71AD7EC2A74382B1ADD0322E83E398', '东方不败_146', '男', '1999-11-11', '139146', 'cstm_146@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FCAF0375A67447F4BD0A17ABD0E49392', '东方不败_25', '女', '1999-11-11', '13925', 'cstm_25@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FD49A8463E834A8C9699E9A65CB64EBB', '东方不败_218', '男', '1999-11-11', '139218', 'cstm_218@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FE3414697A0E47BF9ABBBF85B108B5BC', '东方不败_80', '男', '1999-11-11', '13980', 'cstm_80@163.com', '我是日月神教的！');
+INSERT INTO `t_customer` VALUES ('FFCBF4C1FB4849F4A2DAFCDE086DB0A6', '东方不败_296', '男', '1999-11-11', '139296', 'cstm_296@163.com', '我是日月神教的！');
